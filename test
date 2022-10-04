@@ -1,0 +1,18 @@
+import numpy as np
+a_1=np.arange(12,24)
+
+a_1_1=a_1.reshape(2,6)
+a_2_1=a_1.reshape(3,4)
+a_3_1=a_1.reshape(4,3)
+a_4_1=a_1.reshape(1,12)
+a_5_1=a_1.reshape(12,1)
+
+a_1_2=a_1.reshape(-1,3)
+a_2_2=a_1.reshape(-1,6)
+a_3_2=a_1.reshape(-1,2)
+a_4_2=a_1.reshape(4,-1)
+a_5_2=a_1.reshape(3,-1)
+
+a_1_3=a_1.reshape(12,-1) 
+
+a_1_3.ndim #массив Numpy, состоящий из одного столбца и 12 строк, одномерным назвать нельзя
